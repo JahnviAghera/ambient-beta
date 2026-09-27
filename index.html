@@ -544,6 +544,16 @@
     const button = document.getElementById('submit');
     const say = (text, kind) => { status.textContent = text; status.className = 'status' + (kind ? ' ' + kind : ''); };
 
+    // Untagged visits: keep the referring site (e.g. google.com, chatgpt.com) so search and
+    // AI-assistant sign-ups can be told apart. Only the domain is kept, never the full URL.
+    const firstReferrer = (() => {
+      try {
+        const host = new URL(document.referrer).hostname.replace(/^www\./, '');
+        return host && host !== location.hostname ? host : '';
+      } catch { return ''; }
+    })();
+    const referrer = () => firstReferrer;
+
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const email = form.email.value.trim();
@@ -558,7 +568,7 @@
           method: 'POST',
           headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
           body: JSON.stringify({ email, platform: form.platform.value, consent: true,
-            source: (params.get('utm_source') || params.get('ref') || '').slice(0, 64) || null }),
+            source: (params.get('utm_source') || params.get('ref') || referrer() || '').slice(0, 64) || null }),
         });
         if (res.ok) { form.reset(); say('You’re on the list. We’ll email you when the beta opens.', 'ok'); }
         else {
