@@ -1,0 +1,27 @@
+# Ambient
+
+> Ambient is a visual day planner app for iPhone and Android, designed for people with ADHD and other neurodivergent adults. Instead of waiting to be opened, it brings your plan to you: home-screen widgets show what is now and next, reminders can nudge you again if you have not started, and a full-screen focus timer shows one thing at a time. Ambient is coming soon; a beta is open for sign-ups.
+
+## Key facts
+- Name: Ambient (also "Ambient Planner")
+- Platforms: iPhone (iOS) and Android
+- Status: coming soon; beta sign-up at https://jahnviaghera.github.io/ambient-beta/
+- Audience: ADHD and neurodivergent adults, and anyone who forgets to check their planner
+- Pricing: free plan; optional Ambient Pro upgrade (e.g. more routines, sync across devices)
+- Maker: Jahnvi Aghera (jahnviaghera@gmail.com)
+- Not a medical device: it supports executive function; it does not diagnose or treat any condition
+
+## Features
+- Brain dump: type or say everything on your mind; it becomes a timed plan
+- Visual day timeline with "what's next" pinned on top
+- Reminders: gentle or alarm-style, with an optional second nudge if you have not started
+- Full-screen focus timer
+- Home-screen widgets on iPhone and Android (What's next, Today, Progress)
+- Routines (e.g. morning launch) added to the day in one tap
+- Low-stimulation design: calm colours, reduced motion, high-contrast and text-size options
+- Privacy: plans stay on the phone unless the user turns on sync; no ads, no data selling
+
+## Pages
+- [Home and beta sign-up](https://jahnviaghera.github.io/ambient-beta/)
+- [Privacy Policy](https://jahnviaghera.github.io/ambient-beta/privacy.html)
+- [Terms of Use](https://jahnviaghera.github.io/ambient-beta/terms.html)
