@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Ambient</title>
+  <meta name="description" content="Privacy Policy for the Ambient app and website.">
+  <link rel="icon" type="image/png" href="media/icon-192.png">
+  <style>
+    @font-face { font-family: Bricolage; src: url(fonts/Bricolage-700.ttf) format("truetype"); font-weight: 700; font-display: swap; }
+    @font-face { font-family: Geist; src: url(fonts/Geist-400.ttf) format("truetype"); font-weight: 400; font-display: swap; }
+    @font-face { font-family: Geist; src: url(fonts/Geist-600.ttf) format("truetype"); font-weight: 600; font-display: swap; }
+    :root { --paper: #F8F5EE; --raised: #FDFCF8; --rule: #D5D0C8; --muted: #68625C; --ink-2: #423C37; --ink: #1D1713; --accent: #117878; }
+    @media (prefers-color-scheme: dark) { :root { --paper: #120F0B; --raised: #231E19; --rule: #393530; --muted: #9C9792; --ink-2: #C7C4BE; --ink: #EEEBE5; --accent: #69BBBA; } }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.65 Geist, system-ui, sans-serif; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+    header { padding: 22px 0 8px; }
+    .wordmark { display: inline-flex; align-items: flex-end; gap: 4px; font: 700 26px/1 Bricolage, sans-serif; letter-spacing: -0.03em; color: var(--ink); text-decoration: none; }
+    .wordmark::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); margin-bottom: 3px; }
+    h1 { font: 700 clamp(36px, 6vw, 52px)/1.1 Bricolage, sans-serif; letter-spacing: -0.02em; margin: 32px 0 8px; }
+    h2 { font: 600 22px/1.3 Geist, sans-serif; margin: 36px 0 8px; }
+    p, li { color: var(--ink-2); }
+    .meta { color: var(--muted); font-size: 15px; }
+    a { color: var(--accent); }
+    .table { overflow-x: auto; }
+    table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 12px 0; }
+    th, td { text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); padding: 10px 12px 10px 0; }
+    th { color: var(--ink); }
+    footer { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 20px; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><a class="wordmark" href="./" aria-label="Ambient home">ambient</a></header>
+    <main>
+<h1>Privacy Policy</h1>
+<p class="meta">Version 1.0 · Effective 27 September 2026</p>
+<p>This policy explains what information Ambient handles, where it goes, and the choices you have. the developer of Ambient ("we", "us") is responsible for your information as described here. Contact: <a href="mailto:jahnviaghera@gmail.com.">jahnviaghera@gmail.com.</a></p>
+<p><strong>The short version:</strong> your plans live on your device unless you turn on sync. We don't run ads, we don't use analytics or tracking SDKs, and we don't sell or share your information for advertising. A few features you choose to use send limited data to the services listed below.</p>
+<h2>1. Information that stays on your device</h2>
+<p>Your tasks, routines, timers, settings and reminders are stored on your phone, in the app's private storage. Notifications and home-screen widgets are created on your device. Because plans can reveal things about your health or daily life, this data does not leave your device unless you export it or choose to sync it (see below).</p>
+<h2>2. Information we or our providers receive</h2>
+<div class="table"><table><thead><tr><th>What</th><th>When</th><th>Who receives it</th><th>Why</th></tr></thead><tbody><tr><td>Email address, encrypted password, account ID, sign-in times</td><td>When you create your account (required to use Ambient)</td><td>Supabase (our account host)</td><td>To create and secure your account</td></tr><tr><td>Your tasks and routines (titles, times, notes, steps, icons, colours)</td><td>Only if you sign in and use Sync (Ambient Pro)</td><td>Supabase (our cloud database)</td><td>To keep your plan the same on all your devices</td></tr><tr><td>Records of what you agreed to (for example, Terms version and date)</td><td>When you create an account</td><td>Supabase</td><td>To keep a record of your consent</td></tr><tr><td>Brain-dump text, the date, current time and your time zone</td><td>Only when you use brain dump and our server AI is used</td><td>Our server and our AI provider</td><td>To turn your text into draft tasks</td></tr><tr><td>Purchase history, an anonymous app user ID, device platform, app version</td><td>When the app checks or makes a purchase</td><td>RevenueCat, and Apple or Google</td><td>To unlock Pro and manage subscriptions</td></tr><tr><td>Email address, phone type (iPhone/Android), where you found us</td><td>Only if you join the beta list on our website</td><td>Supabase (our database)</td><td>To invite you to the beta and tell you about launch</td></tr><tr><td>Your voice</td><td>Only while you use voice input</td><td>Your device's speech service (Apple or Google)</td><td>To turn speech into text</td></tr><tr><td>Your IP address</td><td>When you download the optional on-device AI model</td><td>Hugging Face</td><td>To deliver the download</td></tr></tbody></table></div>
+<p>Payment details are handled by Apple or Google. We never see your card number.</p>
+<p><strong>Brain dump.</strong> Our server does not store your brain-dump text after returning the result. Our AI provider processes it under its own terms and may keep it for a short time for abuse and safety monitoring. We only use AI providers whose terms do not allow them to train their models on this data. If you download the on-device model, brain dump runs entirely on your phone and nothing is sent. If no AI is available, a simple parser runs on your device.</p>
+<p><strong>Voice input</strong> is processed by Apple's or Google's speech recognition under their privacy policies. Ambient receives only the resulting text.</p>
+<h2>3. What we don't do</h2>
+<ul><li>No advertising, and no advertising or tracking SDKs.</li><li>No selling or "sharing" of personal information, as those terms are used in U.S. state privacy laws.</li><li>No tracking you across other companies' apps or websites.</li><li>No use of your data for automated decisions that have legal or similarly significant effects on you.</li></ul>
+<h2>4. Legal bases (EEA, UK and similar laws)</h2>
+<p>We process account data to perform our contract with you; brain-dump and voice data because you ask us to (performance of contract and, where required, your consent); purchase data to perform our contract and meet legal obligations; and limited technical data (such as IP addresses in server logs) for our legitimate interest in keeping Ambient secure.</p>
+<h2>5. How long we keep it</h2>
+<ul><li><strong>On-device data:</strong> until you delete it, use Settings → Delete all my data, or uninstall the app.</li><li><strong>Synced tasks and routines:</strong> until you delete them, or delete your account.</li><li><strong>Account data:</strong> until you delete your account (Settings → Account → Delete account). We delete it promptly; backups roll off within 30 days.</li><li><strong>Beta list:</strong> until the app launches publicly, or sooner if you ask us to remove you.</li><li><strong>Brain-dump text:</strong> not stored by our server after processing.</li><li><strong>Purchase records:</strong> kept by RevenueCat, Apple and Google as long as required for tax, accounting and legal purposes.</li></ul>
+<h2>6. Your rights and choices</h2>
+<p>Depending on where you live, you may have the right to access, correct, delete or export your information, to object to or restrict processing, to withdraw consent, and to complain to your data-protection authority. You can:</p>
+<ul><li><strong>Export</strong> your plans from Settings → Export my data.</li><li><strong>Delete</strong> your plans from Settings → Delete all my data.</li><li><strong>Delete your account</strong> from Settings → Account → Delete account.</li><li><strong>Turn off</strong> AI features by not using brain dump, or use the on-device model instead.</li><li><strong>Contact us</strong> at <a href="mailto:jahnviaghera@gmail.com">jahnviaghera@gmail.com</a> for any other request. We will respond within the time the law requires (usually 30 days) and will not discriminate against you for exercising your rights.</li></ul>
+<h2>7. Health information</h2>
+<p>Ambient is designed for people with ADHD and other forms of neurodivergence, but it does not ask for a diagnosis or health records. If your plans contain health-related details, they stay on your device. We don't sell health information, and we don't collect consumer health data as defined by laws such as Washington's My Health My Data Act.</p>
+<h2>8. Children</h2>
+<p>Ambient is not directed to children under 13, and we don't knowingly collect personal information from them. If you believe a child under 13 has created an account, contact us and we will delete it.</p>
+<h2>9. International transfers</h2>
+<p>Our providers may process information in the United States and other countries. Where the law requires, we rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses.</p>
+<h2>10. Security</h2>
+<p>We use encryption in transit (HTTPS), store only what is needed, keep your plans on your device, and restrict access to account data. No system is perfectly secure, so please use a strong, unique password and keep your device locked.</p>
+<h2>11. Changes</h2>
+<p>We may update this policy. If a change is material, we will tell you in the app before it takes effect. The version and effective date are shown at the top.</p>
+<h2>12. Contact</h2>
+<p>the developer of Ambient · <a href="mailto:jahnviaghera@gmail.com">jahnviaghera@gmail.com</a></p>
+    </main>
+    <footer><a href="./">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></footer>
+  </div>
+</body>
+</html>
