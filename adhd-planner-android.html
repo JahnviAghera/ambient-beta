@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ADHD Planner App for Android — Ambient</title>
+  <meta name="description" content="Ambient is a visual day planner for Android built for ADHD brains: brain dump to plan, a calm day timeline, reminders that nudge again, one big focus timer and home-screen widgets.">
+  <link rel="canonical" href="https://jahnviaghera.github.io/ambient-beta/adhd-planner-android.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:site_name" content="Ambient">
+  <meta property="og:title" content="An ADHD planner app for Android that comes to you">
+  <meta property="og:description" content="Brain dump to plan, a calm day timeline, nudges that don't give up, one big focus timer and home-screen widgets.">
+  <meta property="og:url" content="https://jahnviaghera.github.io/ambient-beta/adhd-planner-android.html">
+  <meta property="og:image" content="https://jahnviaghera.github.io/ambient-beta/media/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#F8F5EE">
+  <link rel="icon" type="image/png" href="media/icon-192.png">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebPage",
+   "@id": "https://jahnviaghera.github.io/ambient-beta/adhd-planner-android.html",
+   "url": "https://jahnviaghera.github.io/ambient-beta/adhd-planner-android.html",
+   "name": "ADHD Planner App for Android — Ambient",
+   "isPartOf": {"@id": "https://jahnviaghera.github.io/ambient-beta/#website"},
+   "about": {"@id": "https://jahnviaghera.github.io/ambient-beta/#app"},
+   "inLanguage": "en"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {"@type": "Question", "name": "Is there a visual planner for ADHD on Android?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Ambient is a visual day planner for Android designed for ADHD and neurodivergent adults. It shows your day as a calm timeline, pins the next task on top, and puts your plan on the home screen with widgets."}},
+    {"@type": "Question", "name": "Does Ambient have Android home-screen widgets?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Ambient has What's next, Today, Focus timer and Progress widgets on Android, so you can see your plan without opening the app."}},
+    {"@type": "Question", "name": "Can Ambient remind me again if I haven't started a task?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Yes. Turn on \"Nudge me again if I haven't started\" and Ambient sends a second reminder when a block slips by. You can also choose alarm-style, full-screen reminders when your phone is locked."}},
+    {"@type": "Question", "name": "Is Ambient free?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Ambient has a free plan for planning today, with one routine, widgets and timers. Ambient Pro adds planning any day, brain dump to plan, unlimited routines, month planning and sync, as a monthly, yearly or one-time lifetime purchase."}}
+   ]
+  }
+ ]
+}
+  </script>
+  <style>
+    @font-face { font-family: Bricolage; src: url(fonts/Bricolage-700.ttf) format("truetype"); font-weight: 700; font-display: swap; }
+    @font-face { font-family: Geist; src: url(fonts/Geist-400.ttf) format("truetype"); font-weight: 400; font-display: swap; }
+    @font-face { font-family: Geist; src: url(fonts/Geist-600.ttf) format("truetype"); font-weight: 600; font-display: swap; }
+    :root { --paper: #F8F5EE; --raised: #FDFCF8; --rule: #D5D0C8; --muted: #68625C; --ink-2: #423C37; --ink: #1D1713; --accent: #117878; }
+    @media (prefers-color-scheme: dark) { :root { --paper: #120F0B; --raised: #231E19; --rule: #393530; --muted: #9C9792; --ink-2: #C7C4BE; --ink: #EEEBE5; --accent: #69BBBA; } }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.65 Geist, system-ui, sans-serif; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+    header { padding: 22px 0 8px; display: flex; justify-content: space-between; align-items: center; }
+    .wordmark { display: inline-flex; align-items: flex-end; gap: 4px; font: 700 26px/1 Bricolage, sans-serif; letter-spacing: -0.03em; color: var(--ink); text-decoration: none; }
+    .wordmark::after { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--accent); margin-bottom: 3px; }
+    h1 { font: 700 clamp(34px, 6vw, 50px)/1.1 Bricolage, sans-serif; letter-spacing: -0.02em; margin: 32px 0 12px; }
+    h2 { font: 600 22px/1.3 Geist, sans-serif; margin: 40px 0 8px; }
+    p, li { color: var(--ink-2); }
+    .lede { font-size: 19px; }
+    a { color: var(--accent); }
+    .btn { display: inline-block; padding: 10px 20px; background: var(--accent); color: #fff; border-radius: 10px; text-decoration: none; font-weight: 600; font-size: 15px; }
+    figure { margin: 28px 0; }
+    figure img { width: 100%; max-width: 360px; height: auto; border-radius: 20px; border: 1px solid var(--rule); display: block; }
+    figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; }
+    .note { color: var(--muted); font-size: 15px; }
+    footer { border-top: 1px solid var(--rule); margin-top: 48px; padding-top: 20px; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header><a class="wordmark" href="./" aria-label="Ambient home">ambient</a><a class="btn" href="./#join">Join the beta</a></header>
+    <main>
+      <h1>An ADHD planner app for Android that comes to you</h1>
+      <p class="lede">Most planner apps only help if you remember to open them. Ambient is a visual day planner for Android that puts your plan where you already look: your home screen, your notifications, and one big focus timer.</p>
+
+      <h2>Why planners stop working for ADHD brains</h2>
+      <p>The plan usually isn't the problem. The problem is that it disappears the moment you stop looking at it. Out of sight really is out of mind, so a planner that waits to be opened ends up unopened. Ambient is built around the opposite idea: the plan should follow you.</p>
+
+      <h2>Brain dump first, plan second</h2>
+      <p>Type or say everything on your mind, like "call the dentist at 4, groceries, reply to Sam". Ambient turns it into time blocks on today's timeline. There are no forms to fill in and no categories to choose first.</p>
+      <figure><img src="media/screen-voice.jpg" alt="Ambient voice brain dump on Android" loading="lazy" width="360"><figcaption>Say it, and Ambient lays it out as a plan.</figcaption></figure>
+
+      <h2>A calm visual timeline with one next thing</h2>
+      <p>Your day shows as colour-coded blocks with a live "now" line. The next task is always pinned on top with a Start button, so you don't have to decide what to do next. Running late? Push a block 15 minutes in one tap.</p>
+      <figure><img src="media/screen-day.jpg" alt="Ambient day timeline with the next task pinned on top" loading="lazy" width="360"><figcaption>The next thing is always the biggest thing on screen.</figcaption></figure>
+
+      <h2>Reminders that nudge again</h2>
+      <p>Choose gentle heads-ups or alarm-style reminders. Turn on "Nudge me again if I haven't started" and Ambient follows up when a block slips by. On Android you can also get a full-screen alarm when your phone is locked.</p>
+
+      <h2>One big focus timer</h2>
+      <p>Start a block and the screen becomes a countdown you can read from across the room. The screen stays on while it runs and the timer ends with a sound.</p>
+      <figure><img src="media/screen-focus.jpg" alt="Ambient full-screen focus timer" loading="lazy" width="360"><figcaption>One timer. Nothing else on screen.</figcaption></figure>
+
+      <h2>Android home-screen widgets</h2>
+      <p>What's next, Today, Focus timer and Progress widgets keep your plan in view without opening the app.</p>
+      <figure><img src="media/screen-android-widget.jpg" alt="Ambient widget on an Android home screen" loading="lazy" width="360"><figcaption>Your plan, on the screen you check most.</figcaption></figure>
+
+      <h2>Calm by design</h2>
+      <ul>
+        <li>Low-stimulation colours and a reduce-motion setting</li>
+        <li>Every task has an icon and a label, so colour is never the only signal</li>
+        <li>A read-aloud button for tasks</li>
+        <li>Plans stay on your phone unless you turn on sync. No ads, no selling data.</li>
+      </ul>
+
+      <h2>Common questions</h2>
+      <p><strong>Is there a visual planner for ADHD on Android?</strong><br>Yes. Ambient is built for Android first, with native widgets and alarm-grade reminders.</p>
+      <p><strong>Is Ambient free?</strong><br>There's a free plan for planning today, with one routine, widgets and timers. Ambient Pro adds planning any day, brain dump to plan, unlimited routines, month planning and sync, as a monthly, yearly or one-time lifetime purchase.</p>
+      <p><strong>When can I get it?</strong><br>Ambient is in testing on Google Play now. <a href="./#join">Join the beta</a> and we'll let you know when it's ready.</p>
+
+      <p style="margin-top:32px"><a class="btn" href="./#join">Join the beta</a></p>
+      <p class="note">Related: <a href="time-blindness.html">Time blindness: practical ways to see time again</a></p>
+    </main>
+    <footer>Ambient is a planning tool that supports executive function. It is not a medical device and does not diagnose or treat any condition.<br><a href="./">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="delete-account.html">Delete Account</a></footer>
+  </div>
+</body>
+</html>
