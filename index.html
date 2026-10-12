@@ -221,6 +221,9 @@
     .status.ok { color: var(--accent); font-weight: 600; }
     .status.err { color: var(--danger); }
     .fine { font-size: 13px; color: var(--muted); margin: 12px 0 0; }
+    .test-callout { background: var(--accent-soft); border-radius: 14px; padding: 14px 18px; margin: 0 0 24px; max-width: 34em; font-size: 16px; color: var(--ink); }
+    .test-callout a { color: var(--accent); font-weight: 600; white-space: nowrap; }
+    .btn-ghost { background: transparent; color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); margin-left: 10px; }
 
     /* ---- Problem: scroll-linked (JS sets --p from 0 to 1 while the section crosses the viewport) ---- */
     .problem { padding-block: 40px; }
@@ -362,9 +365,11 @@
     <!-- Hero -->
     <section class="wrap hero" id="join">
       <div>
-        <span class="kicker reveal" style="--i:0">Coming soon · iPhone &amp; Android</span>
+        <span class="kicker reveal" style="--i:0">Android test open now · iPhone coming soon</span>
         <h1 class="reveal" style="--i:1">A planner that <em>comes to you.</em></h1>
         <p class="lede reveal" style="--i:2">Ambient puts your day where you’ll see it — on your home screen, in your notifications, and as a big visual timer — so you don’t have to remember to check a planner. Built for ADHD and neurodivergent brains.</p>
+
+        <p class="test-callout reveal" style="--i:3"><strong>On Android?</strong> You can test Ambient today. It takes about three minutes, and every Pro feature is free. <a href="join-test.html">Join the Android test →</a></p>
 
         <form id="signup" class="reveal" style="--i:3" novalidate>
           <label class="field" for="email">Email</label>
@@ -509,7 +514,7 @@
         <details class="qa reveal" style="--i:0"><summary>What is Ambient?</summary><p>Ambient is a visual day planner app for iPhone and Android, designed for people with ADHD and other neurodivergent adults. Instead of waiting to be opened, it shows your plan on your home screen (widgets), in your notifications (reminders that can nudge again) and as one big focus timer.</p></details>
         <details class="qa reveal" style="--i:1"><summary>Who is Ambient for?</summary><p>People who find traditional planners easy to forget — especially ADHD and neurodivergent adults who struggle with time blindness, getting started, or too many tasks at once.</p></details>
         <details class="qa reveal" style="--i:2"><summary>How is Ambient different from other planner apps?</summary><p>Most planners only help if you remember to open them. Ambient brings the plan to you: home-screen widgets show what is now and next, reminders can nudge you again if you have not started, and a brain dump turns whatever you type or say into a timed plan.</p></details>
-        <details class="qa reveal" style="--i:3"><summary>When will Ambient launch, and on which phones?</summary><p>Ambient is coming soon to iPhone (iOS) and Android. Join the beta on this page to get an invite before the public launch.</p></details>
+        <details class="qa reveal" style="--i:3"><summary>When will Ambient launch, and on which phones?</summary><p>Ambient is in closed testing on Android now, and anyone with an Android phone can <a href="join-test.html">join the test</a>. The iPhone version is coming soon: join the beta list on this page to get an invite before the public launch.</p></details>
         <details class="qa reveal" style="--i:4"><summary>Is Ambient free?</summary><p>Ambient will have a free plan. Some features, such as more routines and syncing across devices, are part of an optional Ambient Pro upgrade.</p></details>
         <details class="qa reveal" style="--i:5"><summary>Is Ambient a medical app?</summary><p>No. Ambient is a planning tool that supports executive function. It is not a medical device and does not diagnose or treat ADHD or any other condition.</p></details>
         <details class="qa reveal" style="--i:6"><summary>What happens to my data?</summary><p>Your plans are stored on your phone. They leave your device only if you choose to sync them to your account. There are no ads and no data selling. See the Privacy Policy for details.</p></details>
@@ -521,6 +526,7 @@
       <h2 class="reveal">Be first to try Ambient.</h2>
       <p class="reveal" style="--i:1">Join the beta for iPhone or Android. We’ll email you once — when it’s ready.</p>
       <a class="btn reveal" style="--i:2" href="#join">Join the beta</a>
+      <a class="btn btn-ghost reveal" style="--i:3" href="join-test.html">Test on Android now</a>
     </section>
   </main>
 

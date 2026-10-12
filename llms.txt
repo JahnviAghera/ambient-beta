@@ -5,7 +5,7 @@
 ## Key facts
 - Name: Ambient (also "Ambient Planner")
 - Platforms: iPhone (iOS) and Android
-- Status: in closed testing on Google Play; beta sign-up at https://jahnviaghera.github.io/ambient-beta/
+- Status: Android closed test open to anyone (how to join: https://jahnviaghera.github.io/ambient-beta/join-test.html); iPhone coming soon, beta sign-up at https://jahnviaghera.github.io/ambient-beta/
 - Audience: ADHD and neurodivergent adults, and anyone who forgets to check their planner
 - Pricing: free plan (today's plan, one routine, widgets, timers); Ambient Pro monthly, yearly (7-day trial) or one-time lifetime adds planning any day, brain dump to plan, unlimited routines, month planning and sync
 - Maker: Jahnvi Aghera (jahnviaghera@gmail.com)
@@ -27,4 +27,5 @@
 - [Terms of Use](https://jahnviaghera.github.io/ambient-beta/terms.html)
 - [ADHD planner app for Android](https://jahnviaghera.github.io/ambient-beta/adhd-planner-android.html)
 - [Time blindness: practical ways to see time again](https://jahnviaghera.github.io/ambient-beta/time-blindness.html)
+- [Join the Android test](https://jahnviaghera.github.io/ambient-beta/join-test.html)
 - [Delete your account](https://jahnviaghera.github.io/ambient-beta/delete-account.html)
